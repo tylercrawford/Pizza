@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H74-DB-jZV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pizza-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftPizzaTableDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Prices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AP5-XT-0ah">
+                                <rect key="frame" x="14" y="72" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pizza Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS0-wQ-tcX">
+                                <rect key="frame" x="14" y="123" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vya-aF-6k0">
+                                <rect key="frame" x="14" y="166" width="307" height="29"/>
+                                <segments>
+                                    <segment title="Cheese"/>
+                                    <segment title="Pepperoni"/>
+                                    <segment title="Sausage"/>
+                                    <segment title="Veggie"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fqi-1e-Du1">
+                                <rect key="frame" x="14" y="215" width="307" height="29"/>
+                                <segments>
+                                    <segment title="Personal"/>
+                                    <segment title="Small"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Large"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBP-00-kZh">
+                                <rect key="frame" x="282" y="550" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="CS0-wQ-tcX" secondAttribute="trailing" id="0Kr-RS-51s"/>
+                            <constraint firstItem="AP5-XT-0ah" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2ln-Bu-JYM"/>
+                            <constraint firstItem="CS0-wQ-tcX" firstAttribute="top" secondItem="AP5-XT-0ah" secondAttribute="bottom" constant="20" id="DbG-Nz-1R0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AP5-XT-0ah" secondAttribute="trailing" id="Wke-vO-s5a"/>
+                            <constraint firstItem="AP5-XT-0ah" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="b0q-Na-Mk4"/>
+                            <constraint firstItem="Vya-aF-6k0" firstAttribute="top" secondItem="CS0-wQ-tcX" secondAttribute="bottom" constant="20" id="fLO-1L-EvF"/>
+                            <constraint firstItem="CS0-wQ-tcX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nIw-uw-7cO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vya-aF-6k0" secondAttribute="trailing" id="oKb-nR-uHs"/>
+                            <constraint firstItem="Fqi-1e-Du1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rFr-Xp-PfL"/>
+                            <constraint firstItem="Fqi-1e-Du1" firstAttribute="top" secondItem="Vya-aF-6k0" secondAttribute="bottom" constant="20" id="uHc-RU-JOC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fqi-1e-Du1" secondAttribute="trailing" id="wxp-I6-PVg"/>
+                            <constraint firstItem="Vya-aF-6k0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="z5M-Tp-dAA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pizza" id="eQ5-9d-f0r">
+                        <barButtonItem key="rightBarButtonItem" title="Prices" id="m6B-We-7mw"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RSZ-77-tsE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H74-DB-jZV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lI3-15-J4E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6ll-h8-TtG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vg7-QA-6rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="1014"/>
+        </scene>
+    </scenes>
+</document>
